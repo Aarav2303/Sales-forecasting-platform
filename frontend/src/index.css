@@ -1,1 +1,59 @@
 @import "tailwindcss";
+
+.navbar {
+  background: #202938;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a.active {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.leads-page,
+.page-content {
+  padding: 30px;
+}
+
+.leads-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 25px;
+}
+
+.leads-page th,
+.leads-page td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.leads-page th {
+  background: #202938;
+  color: white;
+}
+
+.leads-page button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
