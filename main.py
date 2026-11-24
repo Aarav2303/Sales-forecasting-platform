@@ -7,7 +7,8 @@ from routers import leads, company_analysis
 # Create tables in PostgreSQL automatically on startup
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="AI-Powered Sales Forecasting Platform - Milestone 1")
+app = FastAPI(title="AI-Powered Sales Forecasting Platform - Milestone 2",
+    version="0.2.0",)
 
 # Allow frontend apps to communicate with this API
 app.add_middleware(
