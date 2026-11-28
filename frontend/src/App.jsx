@@ -11,10 +11,12 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Navigate to="/Leads/" />} />
+          <Route path="/" element={<Navigate to="/Leads/" replace />} />
           <Route path="/Leads/" element={<LeadsPage />} />
           <Route path="/Outreach/" element={<EmailGenerator />} />
+          <Route path="/Outreach/:leadId" element={<EmailGenerator />} />
           <Route path="/Conversations/" element={<h1>Conversations</h1>} />
+          <Route path="/Conversations/:leadId" element={<h1>Conversations</h1>} />
           <Route path="/Dashboard/" element={<h1>Dashboard</h1>} />
         </Routes>
       </div>
